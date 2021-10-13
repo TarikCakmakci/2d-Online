@@ -203,6 +203,7 @@
     <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\ClickDetector.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\DemoSynchronization\CubeExtra.cs" />
+    <Compile Include="Assets\Scripts\ChatManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Assets\OpenSans\Apache License.txt" />

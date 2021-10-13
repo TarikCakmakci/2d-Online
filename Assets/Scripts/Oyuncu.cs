@@ -36,15 +36,29 @@ public class Oyuncu : Photon.MonoBehaviour
     {
         var move = new Vector3(Input.GetAxisRaw("Horizontal"), 0);
         transform.position += move * MoveSpeed * Time.deltaTime;
+        
+
 
         if (Input.GetKeyDown(KeyCode.A))  
         {
-            sr.flipX = true;
+            photonView.RPC("FlipTrue",PhotonTargets.AllBuffered);
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            sr.flipX = false;
+            photonView.RPC("FlipFalse",PhotonTargets.AllBuffered);
         }
+    }
+    
+    [PunRPC]
+    private void FlipTrue()
+    {
+        sr.flipX = true;
+    }
+    
+    [PunRPC]
+    private void FlipFalse()
+    {
+        sr.flipX = false;
     }
 
 

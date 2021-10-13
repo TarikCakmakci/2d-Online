@@ -98,7 +98,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13020}
     - Class: 114
+      Script: {instanceID: 13660}
+    - Class: 114
       Script: {instanceID: 14200}
+    - Class: 114
+      Script: {instanceID: 14214}
     - Class: 114
       Script: {instanceID: 14760}
     - Class: 114
@@ -1437,6 +1441,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 93888c365d6280ba1df2766c4ec440c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
